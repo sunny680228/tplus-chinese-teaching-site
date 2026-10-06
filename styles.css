@@ -4,3 +4,11 @@
 @media(max-width:900px){.hero{min-height:auto}.hero-grid,.intro-grid,.try-it,.tool-download{grid-template-columns:1fr}.hero-grid{padding:40px 0 90px;gap:40px}.principle{margin:-35px 20px 70px}.feature-grid{grid-template-columns:repeat(2,1fr)}.lesson-flow{grid-template-columns:repeat(2,1fr)}.panel-intro{display:block}.hero-image{max-width:720px}}
 @media(max-width:620px){.topbar{height:auto;padding:18px 0;align-items:flex-start}.brand span:last-child{font-size:.9rem}.official-link{font-size:.86rem;text-align:right}.hero h1{font-size:2.65rem}.hero-grid{padding-top:20px}.principle{grid-template-columns:1fr;padding:28px}.principle-number{width:64px;height:64px;border-radius:18px}.course{padding-left:14px;padding-right:14px}.tabs{gap:7px}.tab{display:block;padding:12px 5px;font-size:.94rem}.tab span{display:block;font-size:.78rem}.tab-panel{padding:24px 16px}.feature-grid,.wide-gallery,.lesson-flow{grid-template-columns:1fr}.try-it,.tool-download{padding:24px 18px}.hero-actions>*{width:100%}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* 首頁首屏比例修正：標題保持單行，內容卡片不再與首屏重疊。 */
+.hero{padding-left:max(32px,calc((100vw - 1640px)/2));padding-right:max(32px,calc((100vw - 1640px)/2))}
+.hero-grid{grid-template-columns:1.15fr .85fr;gap:56px}
+.hero h1{font-size:clamp(2.35rem,3.2vw,3.55rem);line-height:1.18;letter-spacing:-.035em;white-space:nowrap}
+.principle{margin:48px auto 90px}
+@media(max-width:900px){.principle{margin:38px 20px 70px}}
+@media(max-width:620px){.hero h1{font-size:5.2vw;letter-spacing:-.055em;white-space:nowrap}}
