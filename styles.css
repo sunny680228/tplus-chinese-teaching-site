@@ -11,4 +11,8 @@
 .hero h1{font-size:clamp(2.35rem,3.2vw,3.55rem);line-height:1.18;letter-spacing:-.035em;white-space:nowrap}
 .principle{margin:48px auto 90px}
 @media(max-width:900px){.principle{margin:38px 20px 70px}}
-@media(max-width:620px){.hero h1{font-size:5.2vw;letter-spacing:-.055em;white-space:nowrap}}
+@media(max-width:620px){.hero h1{font-size:clamp(2rem,10vw,2.65rem);letter-spacing:-.055em}}
+
+/* 主標題固定為兩行。 */
+.hero h1{white-space:nowrap}
+.hero h1 span{display:block}
